@@ -40,6 +40,9 @@ default['monit'].tap do |monit|
       'default' => 'upstart',
       '>= 14.10' => 'systemd'
     },
+    'amazon' => {
+      'default' => 'sysv'
+    },
     %w(centos rhel) => {
       'default' => 'sysv',
       '>= 7.0' => 'systemd'
