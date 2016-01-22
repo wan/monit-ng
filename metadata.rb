@@ -16,6 +16,6 @@ end
 
 
 unless defined?(Ridley::Chef::Cookbook::Metadata)
-  source_url       'https://github.com/bbg-cookbooks/monit-ng'
-  issues_url       'https://github.com/bbg-cookbooks/monit-ng/issues'
+  source_url       'https://github.com/bbg-cookbooks/monit-ng' if respond_to?(:source_url)
+  issues_url       'https://github.com/bbg-cookbooks/monit-ng/issues' if respond_to?(:issues_url)
 end
